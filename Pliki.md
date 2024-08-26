@@ -1,4 +1,5 @@
-Main ---------------------------------------------------------------------------------
+# Main 
+```java
 public class Main {
     public static void main(String[] args) {
         FileCreator creator = new FileCreator();
@@ -22,11 +23,14 @@ public class Main {
         reader.readFile(fileName);
     }
 }
+```
 
-FileCreator --------------------------------------------------------------------------
+# FileCreator klasa
+```java
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+
 public class FileCreator {
     public void createFile(String fileName, String content) {
         try {
@@ -45,8 +49,9 @@ public class FileCreator {
         }
     }
 }
-
-FileReaderClass -----------------------------------------------------------------------
+```
+# FileReaderClass klasa
+```java
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -63,8 +68,9 @@ public class FileReaderClass { //class dodane z powodu zbierznosci nazw z podsta
         }
     }
 }
-
-FileEditor ------------------------------------------------------------------------------
+```
+# FileEditor klasa
+```java
 import java.io.FileWriter;
 import java.io.IOException;
 public class FileEditor {
@@ -78,4 +84,6 @@ public class FileEditor {
         }
     }
 }
+```
+
 
