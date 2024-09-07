@@ -69,7 +69,7 @@
 
 
 # Useful dependencys
-*Data base*
+## *Data base*
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -83,7 +83,7 @@
 </dependency>
 ```
 
-*Web Starter*
+## *Web Starter*
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -91,7 +91,7 @@
 </dependency>
 ```
 
-*Validator (xd)*
+## *Validator (xd)*
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
