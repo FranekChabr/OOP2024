@@ -1,0 +1,65 @@
+## Oto najważniejsze adnotacje Spring Boot używane do budowy API:
+
+```java
+@RestController
+//Oznacza klasę jako kontroler REST, łącząc funkcje @Controller i @ResponseBody.
+```
+
+```java
+@GetMapping
+//Obsługuje żądania HTTP GET do przypisanej ścieżki.
+```
+
+```java
+@PostMapping
+//Obsługuje żądania HTTP POST.
+```
+```java
+@PutMapping
+//Obsługuje żądania HTTP PUT.
+```
+
+```java
+@DeleteMapping
+//Obsługuje żądania HTTP DELETE.
+```
+
+```java
+@PatchMapping
+//Obsługuje żądania HTTP PATCH.
+```
+
+```java
+@RequestMapping
+//Służy do przypisania ścieżki dla różnych metod HTTP (GET, POST, PUT, DELETE).
+```
+
+```java
+@RequestParam
+//Mapuje parametry zapytania HTTP do parametrów metody.
+```
+
+```java
+@PathVariable
+//Mapuje zmienne ścieżki do parametrów metody.
+```
+
+```java
+@RequestBody
+//Mapuje treść żądania HTTP do obiektu Java.
+```
+
+```java
+@ResponseBody
+//Wskazuje, że wynik metody powinien być zapisany bezpośrednio w odpowiedzi HTTP.
+```
+
+```java
+@ExceptionHandler
+//Przechwytuje i obsługuje wyjątki w kontrolerze.
+```
+
+```java
+@CrossOrigin
+//Pozwala na żądania CORS.
+```
