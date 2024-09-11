@@ -1,4 +1,4 @@
-# Gotowe schematy
+# Gotowe schematy baz danych
 
 ### tworzenie połączzenia DB
 ```Java
