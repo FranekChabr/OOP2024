@@ -52,3 +52,12 @@ public class Pixel {
         this.token = token;
     }
 ```
+### ustawianie pixela
+```Java
+ public static void drawPixel(BufferedImage image, Pixel pixel){
+        Graphics graphics = image.getGraphics();
+        graphics.setColor(pixel.color);
+        graphics.fillRect(pixel.x, pixel.y, 1, 1);
+    }
+```
+
