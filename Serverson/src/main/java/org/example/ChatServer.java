@@ -83,7 +83,7 @@ public class ChatServer {
 
     // Zapisuje użytkownika do bazy danych po połączeniu
     public void saveUserToDatabase(String username) {
-        LocalDateTime connectionTime = LocalDateTime.now();
+        long connectionTime = System.currentTimeMillis();
         dbManager.addUserToDatabase(username, connectionTime);
     }
 }
