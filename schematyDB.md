@@ -1,6 +1,6 @@
 # Gotowe schematy baz danych
 
-### tworzenie połączzenia DB
+### tworzenie połączenia DB
 ```Java
 Connection conn;
     public Database(){
