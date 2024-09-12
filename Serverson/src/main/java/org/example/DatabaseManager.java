@@ -16,9 +16,9 @@ public class DatabaseManager {
     public void initializeDatabase() {
         String createTableSQL = """
                 CREATE TABLE IF NOT EXISTS users (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    id INTEGER PRIMARY KEY,
                     username TEXT NOT NULL,
-                    connection_time TEXT NOT NULL
+                    connection_time INTEGER NOT NULL
                 );
                 """;
 
@@ -31,12 +31,12 @@ public class DatabaseManager {
     }
 
     // Dodawanie użytkownika do bazy danych
-    public void addUserToDatabase(String username, LocalDateTime connectionTime) {
+    public void addUserToDatabase(String username, long connectionTime) {
         String insertSQL = "INSERT INTO users (username, connection_time) VALUES (?, ?);";
 
         try (Connection conn = connect(); PreparedStatement stmt = conn.prepareStatement(insertSQL)) {
             stmt.setString(1, username);
-            stmt.setString(2, connectionTime.toString());
+            stmt.setLong(2, connectionTime);
             stmt.executeUpdate();
             System.out.println("Dodano użytkownika: " + username + " o godzinie " + connectionTime);
         } catch (SQLException e) {
