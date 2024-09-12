@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.test_javafx.SignUpController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="246.0" style="-fx-background-color: #832485;">
+         <children>
+            <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="61.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@twr.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="219.0" text="meow meow meow meow meow" textFill="WHITE">
+               <font>
+                  <Font name="BN Machine" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="354.0" style="-fx-background-color: #f9c1db;">
+         <children>
+            <Label layoutX="26.0" layoutY="212.0" text="username">
+               <font>
+                  <Font name="BN Machine" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="261.0" text="password">
+               <font>
+                  <Font name="BN Machine" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pf_password" layoutX="97.0" layoutY="257.0" prefHeight="25.0" prefWidth="215.0" />
+            <TextField fx:id="tf_username" layoutX="97.0" layoutY="208.0" prefHeight="25.0" prefWidth="215.0" />
+            <Button fx:id="button_signup" layoutX="97.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #d83bb6;" text="Sign up!" textFill="WHITE">
+               <font>
+                  <Font name="BN Machine" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0">
+               <image>
+                  <Image url="@happy.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="358.0" text="masz juz konto?" />
+            <Button fx:id="button_login" layoutX="193.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Login" textFill="#ff00ea">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

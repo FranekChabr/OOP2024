@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.test_javafx.LoggedController">
+   <children>
+      <Label fx:id="label_welcome" layoutX="200.0" layoutY="44.0" scaleX="1.5" scaleY="2.5" text="Siema gosciu" textFill="#ff00ea">
+         <font>
+            <Font name="BN Machine" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="143.0" text="jak ty chyba masz konto" />
+      <Button fx:id="button_logout" layoutY="225.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="600.0" style="-fx-background-color: #b266c5;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Gazzarelli" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
