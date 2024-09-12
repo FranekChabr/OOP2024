@@ -75,12 +75,20 @@
 
 # Useful dependencys
 ## *Data base*
+
 ```xml
+<dependency>
+    <groupId>org.xerial</groupId>
+    <artifactId>sqlite-jdbc</artifactId>
+    <version>3.42.0.0</version> <!-- Możesz sprawdzić najnowszą wersję -->
+</dependency>
+
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-data-jdbc</artifactId>
 </dependency>
 
+<!-- h2 -->
 <dependency>
 	<groupId>com.h2database</groupId>
 	<artifactId>h2</artifactId>
@@ -103,7 +111,7 @@
 	<artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
-## Javafx (jesli springboot laczony z javafx)
+## *Javafx* (jesli springboot laczony z javafx)
 ```xml
 <dependencies>
     <dependency>
