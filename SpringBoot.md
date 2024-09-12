@@ -103,3 +103,19 @@
 	<artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
+## Javafx (jesli springboot laczony z javafx)
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>20</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>20</version>
+    </dependency>
+    <!-- Inne zależności Spring Boot -->
+</dependencies>
+```
